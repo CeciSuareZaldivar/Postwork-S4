@@ -3,9 +3,10 @@ body {
   background-color: lightyellow;
 }
 
-.container_team, .container_post > *{
-   text-align: center;
-   align-items: center;
+.container_team, .container_post, .container_cod > *{
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
 }
 
 #bgroup{
@@ -43,9 +44,10 @@ a{
   display: flex;
   text-align: center;
   padding: 15px;
+  align-items: center; 
 }
 
-.group_team > * {
+.group_team   > * {
   justify-content: center;
 }
 
@@ -73,6 +75,10 @@ a{
   padding: 15px;
 }
 
+.container_button{
+  justify-content:space-around;
+  text-align: center;
+}
 
 #bpost{
   color: white;
@@ -84,18 +90,28 @@ a{
   border-radius: 5px;
 }
 
-.img_descripcion{
+#bcod{
+  color: white;
+  background-color: lightblue;    
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 12px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.txt_btn{
+  font-weight: bold;
+  text-align: center;
+}
+
+.img_descripcion, .img_comprobacion, .img_cod{
   height: 100%;
   width: 100%;
 }
 
-.container_func, .container_img_func{
+.container_func, .container_img_func, .container_cod{
   margin: 15px;
-}
-
-.img_comprobacion{
-  height: 100%;
-  width: 100%;
 }
 
 
