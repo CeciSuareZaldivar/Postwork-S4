@@ -42,33 +42,30 @@ console.log('Test 5:', deepEqual(john, { firstName: 'John' })) // false
 
 /** Ejercicio 2*/
 function chunk(array, size) {
-  var result = [], aux = []; contador = 0;
+    var result = [], aux = []; contador = 0;
 
-  if( size > array.length){
-      return("el valor es mas grande que el arreglo");
-  }
+    if( size > array.length){
+        return("el valor es mas grande que el arreglo");
+    }
 
-  for(var i=0; i<array.length;i++)
-  {
-      aux.push(array[i]);
-      contador++;
-
-      if(contador===size)
-      {    
-          result.push(aux);
-          contador = 0;
-          aux = [];
-      }
-  }    
-  console.log(result);
+    for(var i=0; i<array.length;i++){
+        aux.push(array[i]);
+        contador++;
+        if(contador===size){
+            console.log(aux);
+            result.push(aux);
+            contador = 0;
+            aux = [];
+        }
+    }    
+    return result;
 };
-
-  var data = [1, 2, 3, 4, 5, 6, 7, 8]
-
-  console.log('Test 1:', chunk(data, 1)) // [[1], [2], [3], [4], [5], [6], [7], [8]]
-  console.log('Test 2:', chunk(data, 2)) // [[1, 2], [3, 4], [5, 6], [7, 8]]
-  console.log('Test 3:', chunk(data, 3)) // [[1, 2, 3], [4, 5, 6], [7, 8]]
-//
+  
+    var data = [1, 2, 3, 4, 5, 6, 7, 8]
+  
+    console.log('Test 1:', chunk(data, 1)) // [[1], [2], [3], [4], [5], [6], [7], [8]]
+    console.log('Test 2:', chunk(data, 2)) // [[1, 2], [3, 4], [5, 6], [7, 8]]
+    console.log('Test 3:', chunk(data, 3)) // [[1, 2, 3], [4, 5, 6], [7, 8]]
 
 
 /** Ejercicio 3*/
